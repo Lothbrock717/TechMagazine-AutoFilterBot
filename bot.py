@@ -97,3 +97,10 @@ class Bot(Client):
 
 app = Bot()
 app.run()
+
+from pyrogram import idle
+
+# At the end of your script:
+while True:
+    idle()
+    time.sleep(1)
